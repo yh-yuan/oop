@@ -52,6 +52,46 @@ class Cat(PaxingAni):
     pass
 kaka=Dog()
 tom=Cat('tom')
+#
+class Student():
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+        #self.setName(name)
+    #如果不想修改代码
+    def setName(self,name):
+        self.name=name.upper()
+
+    def inro(self):
+        print("hi,my name is {0}".format(self.name))
+
+s1=Student("liu ying ",19)
+s2=Student("michi",24)
+s1.inro()
+s2.inro()
+
+#property案例
+
+class Person2():
+    #函数名称可以任意
+    def fget(self):
+        return self.__name*2
+    def fset(self,name):
+        self.__name=name.upper()
+        #self.__age=int(age)
+
+    def fdel(self):
+        self.__name="NoName"
+    def __call__(self, *args, **kwargs):
+        print("我被当成函数调用了")
+    name=property(fget,fset,fdel,"对name进行了操作")
+p1=Person2()
+p1.name="tuling"
+print(p1.name)
+
+p1()
+
+
 
 
 
