@@ -39,3 +39,26 @@ lambda表达式
  -把次字符串返回十进制的数字
  参数固定的函数，相当于一个有特定参数的函数体
  functools.partial的作用是，把一个函数某些参数固定，返回一个新函数
+ #enumerate
+ -对可迭代对象的每一个元素，配上一个索引，然后索引和内容构成tuple类型
+ #collections模块
+ -namedtuple
+ -deque
+ ##namedtuple
+ -tuple类型
+ -可命名的tuple
+ ##dequeue
+ -比较方便的解决了频繁插入删除的问题
+ #defaultdict
+ -当直接读取dict不存在的属性时，直接返回默认值
+ #counter
+ -需要括号里面的内容可迭代
+ -统计字符串个数
+ #调式
+ -单元测试》集成测试》交测试部
+ -静态调式
+ -动态调式
+ #pdb调试
+ #pycharm调试
+ 
+ 
